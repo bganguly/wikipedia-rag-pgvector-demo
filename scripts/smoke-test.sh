@@ -53,7 +53,7 @@ _check() {
   fi
 }
 
-printf '\n=== smoke test: rag-pgvector-demo ===\n'
+printf '\n=== smoke test: wikipedia-rag-pgvector-demo ===\n'
 printf '  backend:  %s\n' "$BACKEND_URL"
 printf '  frontend: %s\n\n' "$FRONTEND_URL"
 

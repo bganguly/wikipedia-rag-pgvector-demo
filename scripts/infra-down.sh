@@ -85,7 +85,7 @@ _print_progress() {
 # ── Preflight / menu ──────────────────────────────────────────────────────────
 
 _run_preflight() {
-  printf '\n=== rag-pgvector-demo — tear down ===\n\n'
+  printf '\n=== wikipedia-rag-pgvector-demo — tear down ===\n\n'
   printf '  [1] Local   — stop uvicorn + Next.js processes\n'
   printf '  [2] AWS     — destroy Lambda, ECR, CodeBuild, S3, VPC (workspace: lite)\n'
   printf '\nChoice [1/2]: '
@@ -245,7 +245,7 @@ PYEOF
 
   if command -v vercel >/dev/null 2>&1; then
     bold '\nRemoving Vercel project...'
-    vercel remove rag-pgvector-demo --yes 2>/dev/null \
+    vercel remove wikipedia-rag-pgvector-demo --yes 2>/dev/null \
       && green '  Vercel project removed' \
       || dim  '  Vercel project not found or already removed'
   fi

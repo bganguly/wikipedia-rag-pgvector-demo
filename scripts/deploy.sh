@@ -137,7 +137,7 @@ _prompt_menu() {
     _SMART_DEFAULT=2; _SMART_REASON="last commit included backend/infra changes"
   fi
 
-  printf '\n=== rag-pgvector-demo ===\n\n'
+  printf '\n=== wikipedia-rag-pgvector-demo ===\n\n'
   printf '  [1] Local      — uvicorn + npm dev, no Docker (Postgres via .env)\n'
   printf '  [2] Serverless — AWS Lambda + Neon + Vercel  (~$0/mo)'
   (( _aws_lite_count > 0 )) && printf ' [%s resources active]' "$_aws_lite_count" || printf ' [not deployed]'
@@ -370,7 +370,7 @@ _wait_for_ecr_and_apply() {
     local _ecr_elapsed=0
     until _ecr_image_exists "$BE_REPO_NAME" "$TAG"; do
       if (( _ecr_elapsed >= 600 )); then
-        printf '  Timed out waiting for %s. Check Actions: https://github.com/bganguly/rag-pgvector-demo/actions\n' "$TAG"
+        printf '  Timed out waiting for %s. Check Actions: https://github.com/bganguly/wikipedia-rag-pgvector-demo/actions\n' "$TAG"
         exit 1
       fi
       sleep 15; _ecr_elapsed=$(( _ecr_elapsed + 15 ))
