@@ -251,7 +251,7 @@ PYEOF
   fi
 
   local PORTFOLIO_SET_LIVE
-  PORTFOLIO_SET_LIVE="$(cd "$ROOT/../../portfolio/scripts" 2>/dev/null && pwd || true)/set-live-url.sh"
+  PORTFOLIO_SET_LIVE="$(cd "$ROOT/../../misc-personal-implementations/portfolio/scripts" 2>/dev/null && pwd || true)/set-live-url.sh"
   if [[ -f "$PORTFOLIO_SET_LIVE" ]]; then
     bash "$PORTFOLIO_SET_LIVE" --tier "$DEPLOY_WORKSPACE" --down rag
   fi
