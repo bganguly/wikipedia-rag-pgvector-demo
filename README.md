@@ -1,4 +1,4 @@
-# RAG + pgvector Demo — LangChain · Vercel AI SDK · NVIDIA NIM
+# RAG + pgvector Demo — Wikipedia · LangChain · Vercel AI SDK · NVIDIA NIM
 
 End-to-end **Retrieval-Augmented Generation pipeline** over any unstructured corpus: LangChain chunking,
 OpenAI embeddings stored in **pgvector**, cosine-similarity retrieval, and token-level SSE streaming via
